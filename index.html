@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Mapty</title>
+        <link rel="stylesheet" href="./style.css">
+        
+        <link 
+        rel="stylesheet" 
+        href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" 
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" 
+        crossorigin="" />
+        
+        <script 
+        defer
+        src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" 
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" 
+        crossorigin=""></script>
+        
+        
+    </head>
+<body>
+    <div class="div1" id="div1">
+    <center>
+        <h2><img src="../mapty/Images/cycle.jpg" class="mainLogo">Mapty<br></h2>
+    </div>
+    
+    <div id="map" class="div2">
+    </div>
+   <div class="div3 hidden" id="div3"><br><br>
+    <form class="form">
+        <div class="type">TYPE <select class="runORcycle" id="selectOne" onchange="selectType()" required="required">
+            <option value="" disabled selected hidden>Select Type</option>
+            <option>Running</option>
+            <option>Cycling</option>
+        </select></div>
+        <div class="distance">DIST
+        <input class="dist" type="number" placeholder="km"></div>
+        <div class="duration">DURATION
+        <input class="dur" type="number" placeholder="min"></div>
+        <div class="cadence">CADENCE
+        <input class="cad" type="number" placeholder="step/min"></div>
+        <div class="elevation hidden">ELEVATION
+        <input class="elev" type="number" placeholder="meters"></div>
+       <button class="btn1 hidden">Submit</button>
+    </form></center>
+</div>
+   <script src="./script.js"></script>
+</body>
+</html>
